@@ -11,8 +11,6 @@ namespace TicketOffice
             Console.OutputEncoding = System.Text.Encoding.GetEncoding("Cyrillic");
             TicketOffice ticketOffice = new TicketOffice();
 
-            Administrator.WriteIntoJson();
-
             while (true)
             {
                 Console.WriteLine("1 = Вивести всі рейси");
