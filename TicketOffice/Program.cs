@@ -10,7 +10,6 @@ namespace TicketOffice
             Console.OutputEncoding = UTF8Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.GetEncoding("Cyrillic");
             Console.OutputEncoding = System.Text.Encoding.GetEncoding("Cyrillic");
-
             TicketOffice ticketOffice = new TicketOffice();
 
             while (true)
