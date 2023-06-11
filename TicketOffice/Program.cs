@@ -15,11 +15,12 @@ namespace TicketOffice
 
             while (true)
             {
-                Console.WriteLine("0 = Вихід та роздрукування квитків");
                 Console.WriteLine("1 = Вивести всі рейси");
                 Console.WriteLine("2 = Почати бронювання");
                 Console.WriteLine("3 = Відмінити бронювання");
-                Console.WriteLine("4 = Оновити сторінку");
+                Console.WriteLine("4 = Роздрукувати квітки");
+                Console.WriteLine("5 = Оновити сторінку");
+                Console.WriteLine("6 = Вихід та роздрукування квитків");
 
                 Console.Write("Оберіть дію: ");
                 int action;
@@ -35,16 +36,11 @@ namespace TicketOffice
 
                 Console.WriteLine("\n");
 
-                if (action < 0 || action > 4)
+                if (action < 1 || action > 6)
                 {
                     string error = string.Format("Число {0} не відповідає ніякій дії. Будь ласка, спробуйте ще раз.", action);
                     PrintError(error);
                     continue;
-                }
-                else if (action == 0)
-                {
-                    ticketOffice.PrintAllTickets();
-                    break;
                 }
                 else if (action == 1)
                 {
@@ -63,9 +59,19 @@ namespace TicketOffice
                 }
                 else if (action == 4)
                 {
+                    ticketOffice.PrintAllTickets();
+                    continue;
+                }
+                else if (action == 5)
+                {
                     Console.Clear();
                     PrintSuccess("Ви оновили сторінку!\n\n");
                     continue;
+                }
+                else if (action == 6)
+                {
+                    ticketOffice.PrintAllTickets();
+                    break;
                 }
 
                 PrintSuccess("Ви розпочали бронювання квитків!");
@@ -366,7 +372,7 @@ namespace TicketOffice
             string date;
             while (true)
             {
-                Console.Write("Дата (у форматі дд.мм.рррр): ");
+                Console.Write("Дата відправлення (у форматі дд.мм.рррр): ");
                 date = Console.ReadLine();
                 try
                 {
