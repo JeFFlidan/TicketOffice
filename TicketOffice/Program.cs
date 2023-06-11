@@ -106,16 +106,16 @@ namespace TicketOffice
 
                 if (seatsAmount == 1)
                 {
-                    PrintSuccess("Ви успішно забронювали 1 квіток!\n");
+                    PrintSuccess("Ви успішно забронювали 1 квиток!\n");
                 }
                 else if (seatsAmount < 5)
                 {
-                    string msg = string.Format("Ви успішно забронювали {0} квітки!\n", seatsAmount);
+                    string msg = string.Format("Ви успішно забронювали {0} квитки!\n", seatsAmount);
                     PrintSuccess(msg);
                 }
                 else
                 {
-                    string msg = string.Format("Ви успішно забронювали {0} квітків!\n", seatsAmount);
+                    string msg = string.Format("Ви успішно забронювали {0} квитків!\n", seatsAmount);
                     PrintSuccess(msg);
                 }
             }
@@ -278,7 +278,7 @@ namespace TicketOffice
                 if (!ticketOffice.CheckIfClientBookedSeat(flightNum, name, secondName, surname))
                 {
                     ticketOffice.BookSeatForCertainFlight(flightNum, name, secondName, surname);
-                    string msg = string.Format("\nВи успіншо забронювали квіток для {0} {1} {2}\n", surname, name, secondName);
+                    string msg = string.Format("\nВи успіншо забронювали квиток для {0} {1} {2}\n", surname, name, secondName);
                     PrintSuccess(msg);
                     ++counter;
                 }

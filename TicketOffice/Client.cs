@@ -17,7 +17,7 @@
         {
             if (obj == null || GetType() != obj.GetType())
                 return false;
-           
+
             Client other = (Client)obj;
             return string.Equals(Name, other.Name)
                 && string.Equals(MiddleName, other.MiddleName)
