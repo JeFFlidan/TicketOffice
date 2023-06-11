@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TicketOffice.TicketOffice">
+    <Position X="5.75" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>oACAAAAEBAAACAgAAAAACAAAAAAIAAAAUAQAAIgACAA=</HashCode>
+      <FileName>TicketOffice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicketOffice.Ticket">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAgAQ=</HashCode>
+      <FileName>Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicketOffice.Program">
+    <Position X="12" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABQEAAEAAAIAAAAQABAIAAAAAAAAABAAAAEA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicketOffice.FlightInitialData">
+    <Position X="1.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAIAAAAQIAAAAAAAQAAAAA=</HashCode>
+      <FileName>FlightInitialData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicketOffice.Flight">
+    <Position X="3.5" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAABBQAAQAIAAEAEMAAABAAAAAACAACAAAAAAAA=</HashCode>
+      <FileName>Flight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicketOffice.Client">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAQAAQABAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

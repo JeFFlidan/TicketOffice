@@ -7,10 +7,11 @@ namespace TicketOffice
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = UTF8Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.GetEncoding("Cyrillic");
             Console.OutputEncoding = System.Text.Encoding.GetEncoding("Cyrillic");
             TicketOffice ticketOffice = new TicketOffice();
+
+            Administrator.WriteIntoJson();
 
             while (true)
             {
@@ -126,6 +127,8 @@ namespace TicketOffice
             }
 
             ticketOffice.SaveInfoAboutFlights();
+
+            Console.ReadKey();
         }
 
 
@@ -283,7 +286,7 @@ namespace TicketOffice
                 if (!ticketOffice.CheckIfClientBookedSeat(flightNum, name, secondName, surname))
                 {
                     ticketOffice.BookSeatForCertainFlight(flightNum, name, secondName, surname);
-                    string msg = string.Format("\nВи успіншо забронювали квиток для {0} {1} {2}\n", surname, name, secondName);
+                    string msg = string.Format("\nВи успішно забронювали квиток для {0} {1} {2}\n", surname, name, secondName);
                     PrintSuccess(msg);
                     ++counter;
                 }
@@ -301,7 +304,7 @@ namespace TicketOffice
             int seatsAmount = 0;
             while (true)
             {
-                Console.Write("Введіть кількість місць або -1 для повернення у меню: : ");
+                Console.Write("Введіть кількість місць або -1 для повернення у меню: ");
                 try
                 {
                     seatsAmount = int.Parse(Console.ReadLine());
